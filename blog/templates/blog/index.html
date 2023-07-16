@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+My Blog
+{% endblock %}
+
+{% block css_files %} 
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+    <nav id="nav-bar">
+        <h1><a href="#">Faaiz's Blog</a></h1>
+        <h2><a href="#">All Posts</a></h2>
+    </nav>
+
+    <header id="header">
+        <img src="" alt="Faaiz Img">
+        <h1>Faaiz Ali Tariq's</h1>
+        <h1>Blog</h1>
+        <p>Hey! I am Faaiz ALi And I love to Blog about Programming!!!</p>
+    </header>
+
+    <section id="posts">
+        <h2>My Lastest Thoughts</h2>
+        <div class="post">
+            <a href="#">
+                <img src="" alt="Mountain Hiking">
+                <p>
+                    THere's nothing like Hiking on mountains
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h1>What I Do</h1>
+        <p>I love Programming and I love to help others struggling
+            out to become a successful Programmer. My goal is to
+            keep growing as a developer.</p>
+    </footer>
+</div>
+{% endblock %}
