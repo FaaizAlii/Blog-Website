@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #164B60;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #164B60;
+}
+
+#nav-bar h1 {
+    font-size: 2rem;
+}
+
+#nav-bar h2 {
+    transition: transform 0.3s;
+}
+
+#nav-bar h2:hover {
+    color: #fff;
+    transform: scale(1.1);
+}

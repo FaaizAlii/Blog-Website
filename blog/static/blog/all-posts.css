@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    padding: 4rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+    background: #0B666A;
+}
+
+ul li {
+    padding: 4rem;
+    border-radius: 20px;
+    background-color: #35A29F;
+    transition: transform 0.3s;
+}
+
+ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

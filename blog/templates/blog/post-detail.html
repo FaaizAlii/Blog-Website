@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+This Blog title
+{% endblock %}
+
+{% block css_files %} 
+    <link rel="stylesheet" href="{% static 'blog/post-detail.css' %}">
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div id="main">
+            <img src="" alt="This POst image">
+            <h2>This Blog's Title</h2>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum laborum necessitatibus repudiandae? Quibusdam ad eveniet ipsum adipisci est distinctio quisquam autem, ipsam architecto tempore. Eum reprehenderit veniam maxime voluptatibus voluptatum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum laborum necessitatibus repudiandae? Quibusdam ad eveniet ipsum adipisci est distinctio quisquam autem, ipsam architecto tempore. Eum reprehenderit veniam maxime voluptatibus voluptatum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum laborum necessitatibus repudiandae? Quibusdam ad eveniet ipsum adipisci est distinctio quisquam autem, ipsam architecto tempore. Eum reprehenderit veniam maxime voluptatibus voluptatum!</p>
+            </section>
+        </div>
+    </div>
+{% endblock %}
