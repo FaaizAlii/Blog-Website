@@ -7,8 +7,8 @@ My Blog
 {% endblock %}
 
 {% block css_files %} 
-    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
     <link rel="stylesheet" href="{% static 'app.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
 {% endblock %}
 
 {% block body %}
@@ -16,7 +16,7 @@ My Blog
 <div class="container">
 
     <header id="header">
-        <img src="" alt="Faaiz Img">
+        <img src="{% static 'blog/images/person.jpg' %}" alt="Faaiz Img">
         <h1>Faaiz Ali Tariq's</h1>
         <h1>Blog</h1>
         <p>Hey! I am Faaiz ALi And I love to Blog about Programming!!!</p>
@@ -25,7 +25,7 @@ My Blog
     <section id="posts">
         <h2>My Lastest Thoughts</h2>
         <div class="post">
-            {% include 'blog/includes/posts.html' %}
+                {% include 'blog/includes/post.html' %}
         </div>
     </section>
 

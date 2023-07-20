@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog/posts.css' %}">
+
+<li>
+    <a href="{% url 'post_detail' 'the-mountains' %}">
+        <img class="img" src="{% static 'blog/images/mountain.jpg' %}" alt="Mountain Hiking">
+        <h2>{{ Posts.title }}</h2>
+        <p>
+            {{ Posts.excerpt }}
+        </p>
+    </a>
+</li>
